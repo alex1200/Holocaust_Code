@@ -1,0 +1,17 @@
+Alberto, Tim, Paul, and I decided our priorities for September are basic pre-processing for us to apply AntConc to the testimonies:
+
+1. Q&A – Separate/markup headers and footers and separate interviewer from interviewee.
+
+2. Separate/markup testimonies by name so we can distinguish between them. (Or we can do this manually if need be.)
+
+3. Give us subcorpora of men vs. women, for gender comparison.
+
+4. Even having 100 clean testimonies would help us. Having the whole set (approx. 800) would be terrific.
+
+
+Priorities by end of the grant (December 31, 2017) – in addition to the above:
+5. Semantic lexicon of appropriate terms for semantic tagging with Wmatrix3.
+
+6. Subcorpora of testimonies of people who went through Krakow and those who went through Budapest.
+
+7. Run the dataset through a geoparser – Anne will talk with Ian about what export/output format we will need when he's in Maine in late September.

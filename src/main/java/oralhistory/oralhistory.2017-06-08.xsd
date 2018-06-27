@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema attributeFormDefault="unqualified" elementFormDefault="qualified" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="response" type="responseType"/>
+  <xs:complexType name="responseType">
+    <xs:sequence>
+      <xs:element type="resultType" name="result"/>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="strType" mixed="true">
+    <xs:sequence>
+      <xs:element type="xs:string" name="str" maxOccurs="unbounded" minOccurs="0"/>
+    </xs:sequence>
+    <xs:attribute type="xs:string" name="name" use="optional"/>
+  </xs:complexType>
+  <xs:complexType name="docType">
+    <xs:choice maxOccurs="unbounded" minOccurs="0">
+      <xs:element type="strType" name="str"/>
+      <xs:element type="arrType" name="arr"/>
+    </xs:choice>
+  </xs:complexType>
+  <xs:complexType name="arrType" mixed="true">
+    <xs:sequence>
+      <xs:element type="xs:string" name="str" maxOccurs="unbounded" minOccurs="0"/>
+    </xs:sequence>
+    <xs:attribute type="xs:string" name="name" use="optional"/>
+  </xs:complexType>
+  <xs:complexType name="resultType">
+    <xs:sequence>
+      <xs:element type="docType" name="doc" maxOccurs="unbounded" minOccurs="0"/>
+    </xs:sequence>
+    <xs:attribute type="xs:string" name="name"/>
+    <xs:attribute type="xs:string" name="numFound"/>
+    <xs:attribute type="xs:string" name="start"/>
+  </xs:complexType>
+</xs:schema>
